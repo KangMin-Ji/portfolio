@@ -31,25 +31,30 @@
 }
 .section_1 .txt_wrap {
   width: 100%;
-  /* padding: 50px; */
-  padding: 2.6vw;
+  padding: 50px;
+  /* padding: 2.6vw; */
   position: absolute;
   top: 50vh;
   left: 0;
   z-index: 1;
-  font-family: "RoslindaleText";
+  /* font-family: "RoslindaleText"; */
   text-align: center;
 }
 .section_1 .txt_wrap .main_title {
-  font-size: 8.4vw;
+  font-size: 180px;
+  /* font-size: 8.4vw; */
   font-weight: 400;
   padding-bottom: 300px;
 }
 .section_1 .txt_wrap p {
-  font-size: 20px;
+  font-size: 28px;
   text-align: center;
-}    .section_1 .ladder {
-  width: 150px;
+  /* font-family: 'MaruBuri-Regular'; */
+}
+
+.section_1 .clock {
+  width: 220px;
+  height: 80px;
   position: absolute;
   top: 0;
   left: 0;
@@ -57,7 +62,7 @@
   margin-left: auto;
   margin-right: auto;
 }
-.section_1 .ladder img {
+.section_1 .clock img {
   width: 100%;
 }
 .section_1 .hole {
@@ -82,7 +87,7 @@
   /* position: absolute; */
   /* top: -90vh; */
   /* background: #000000; */
-  -webkit-mask-image: url(../image/Untitled-1.png);
+  -webkit-mask-image: url(../image/mask.png);
   z-index: 1;
   position: relative;
 }
@@ -93,7 +98,7 @@
 }
 
 .section_1 .person {
-  width: 50%;
+  width: 60%;
   margin: 0 auto;
   /* position: absolute;
   top: 300px; */
@@ -113,24 +118,27 @@
   z-index: 1;
 }
 .section_2 .inner{
-  /* padding: 0 150px; */
-  padding: 0 7.8vw;
+  padding: 0 150px;
+  /* padding: 0 7.8vw; */
 }
 .section_2 p{
   /* font-size: 30px; */
-  font-size: 1.6vw;
+  font-size: 28px;
   position: relative;
   z-index: 1;
+  line-height: 50px;
 }
-
-
+.section_2 .bottom_txt{
+  padding-top: 500px;
+}
 .section_3{
   padding: 400px 0 100px;
   /* padding: 400px 7.8vw 100px 7.8vw; */
   height: 1800px;
 }
 .section_3 .inner{
-  padding: 0 7.8vw;
+  padding: 0 150px;
+  /* padding: 0 7.8vw; */
   width: 100%;
   height: 100%;
   margin: 0 auto;
@@ -145,9 +153,12 @@
   transform: translateX(-50%);
   z-index: 3; */
 }
+.section_3 .txt_wrap span{
+  font-size: 30px;
+}
 .section_3 .txt_wrap .main_title{
-  /* font-size: 240px; */
-  font-size: 12.5vw;
+  font-size: 200px;
+  /* font-size: 12.5vw; */
   position: relative;
   font-family: 'RoslindaleText';
   padding-top: 50px;
