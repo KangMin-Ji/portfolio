@@ -1,0 +1,170 @@
+.card_wrap{
+  position: absolute;
+  transform-style: preserve-3d;
+}
+.card_wrap .card_front{
+  width: 100%;
+  height: 100%;
+  background: url(../image/card_front01.png) no-repeat;
+  background-size: cover;
+  background-position: center center;
+  transform-style: preserve-3d;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 16px;
+  border: 1px solid #e6e6e6;
+}
+.card_wrap .card_back{
+  width: 100%;
+  height: 100%;
+  background: url(../image/card_back01.png) no-repeat;
+  background-size: cover;
+  background-position: center center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 16px;
+  border: 1px solid #e6e6e6;
+  backface-visibility: hidden;
+}
+
+
+.renewal_area {
+  position: relative;
+  /* z-index: 1; */
+}
+.renewal_area .inner{
+  width: 1200px;
+  margin: 0 auto;
+  /* padding: 300px 100px 100px 100px; */
+  padding: 300px 0 100px 0;
+}
+
+.renewal_area .inner .title_wrap{
+  position: relative;
+}
+.renewal_area .img_wrap{
+  width: 100%;
+  height: 800px;
+  position: relative;
+}
+.renewal_area .img_wrap .card_wrap{
+  width: 200px;
+  padding-bottom: 320px;
+}
+.renewal_area .img_wrap .card_wrap.card_wrap01{
+  transform:rotateX(-30deg) rotateY(180deg) rotate(30deg);
+  left: 10px;
+}
+.renewal_area .img_wrap .card_wrap.card_wrap02{
+  transform: rotateX(-36deg) rotateY(182deg) rotate(-45deg);
+  top: 50px;
+  right: 150px;
+}
+.renewal_area .img_wrap .card_wrap.card_wrap03{
+  transform: rotateX(-20deg) rotateY(40deg) rotate(45deg);
+  top: 450px;
+  left: 50px;
+}
+.renewal_area .img_wrap .card_wrap.card_wrap04{
+  transform: rotateX(-20deg) rotateY(200deg) rotate(30deg);
+  top: 450px;
+  left: 550px;
+}
+.renewal_area .img_wrap .card_wrap.card_wrap05{  
+  transform: rotateX(-20deg)  rotateY(20deg) rotate(30deg);
+  top: 400px;
+  right: 0;
+}
+/* .renewal_area .img_wrap img{
+  width: 100%;
+  transform: scale(0.98);
+  transition: 0.3s;
+} */
+.renewal_area .inner .title_wrap:hover img{
+  transform: scale(1);
+}
+.renewal_area .homeP_title {
+  /* width: 100%; */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.renewal_area .homeP_title h2{
+  font-size: 140px;
+  /* font-size: 7.3vw; */
+}
+
+.renewal_area .content_area{
+  width: 1000px;
+  /* padding: 100px 100px 0 100px; */
+  /* padding: 100px 5.2vw 0 5.2vw; */
+  padding-top: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+.renewal_area .content_area .content_img{
+  width: 60%;
+  /* height: 600px; */
+}
+.renewal_area .content_area .content_img img{
+  width: 100%;
+  border: 1px solid #000;
+  /* border: 5px solid #e6e6e6; */
+}
+.renewal_area .content_area .content_txt{
+  /* width: 38%; */
+  /* height: 600px; */
+  /* padding-top: 50px; */
+  font-family: "noto Sans KR", sans-serif;
+  /* background: #ccc; */
+}
+.renewal_area .content_area .content_txt h3{
+  /* text-align: center; */
+  padding-bottom: 30px;
+  font-size: 30px;
+}
+.renewal_area .content_area .content_txt p{
+  padding-bottom: 34px;
+  font-size: 24px;
+}
+/* .renewal_area .content_area .content_txt p::before{
+  content: "";
+  display: inline-block;
+  vertical-align: top;
+  width: 8px;
+  height: 8px;
+  background: #000;
+  border-radius: 50%;
+  margin-right: 10px;
+  margin-top: 10px;
+} */
+.renewal_area .content_txt .button{
+  display: block;
+  width: 200px;
+  height: 50px;
+  background: rgba(0,0,0,0.8);
+  color: #fff;
+  border-radius: 60px;
+  line-height: 50px;
+  margin-top: 30px;
+  font-size: 16px;
+  transition: 0.3s;
+  text-align: center;
+}
+.renewal_area .content_txt .button:hover{
+  background: rgba(0,0,0,1);
+}
+
+@media screen and (max-width: 1200px) {
+  .renewal_area .inner{
+    width: 1200px;
+  }
+  .renewal_area .content_area{
+    flex-direction: column;
+    align-items: center;
+  }
+}
