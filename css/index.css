@@ -74,7 +74,7 @@
   width: 300px;
   height: calc(100vh + 970px);
   position: relative;
-  /* background: purple; */
+  background: purple;
 }
 .section_1 .hole02 {
   position: absolute;
