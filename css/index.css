@@ -78,7 +78,14 @@
   bottom: -30px;
   /* bottom: -50vh; */
 }
-
+.section_1 .mask_img{
+  width: 100%;
+  height: 88px;
+  position: absolute;
+  bottom: 0;
+  /* bottom: -30px; */
+  z-index: 1;
+}
 .section_1 .person_con {
   width: 100%;
   height: 100%;
@@ -87,7 +94,8 @@
   /* position: absolute; */
   /* top: -90vh; */
   /* background: #000000; */
-  -webkit-mask-image: url(../image/mask.png);
+  -webkit-mask-image: linear-gradient(to bottom, black 100%, transparent 100%);
+  mask-image: linear-gradient(to bottom,  transparent 100%, transparent 100%);
   z-index: 1;
   position: relative;
 }

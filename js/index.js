@@ -14,6 +14,7 @@ $(function () {
   });
 
   $(window).scroll(function () {
+    $('header').css({left: 0 - $(this).scrollLeft()});
     sct = $(this).scrollTop();
     wh = $('.section_1 .txt_wrap .main_title').offset().top;
     if (sct > wh) {
