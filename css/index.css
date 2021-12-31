@@ -36,7 +36,7 @@
   position: absolute;
   top: 50vh;
   left: 0;
-  z-index: 1;
+  /* z-index: 1; */
   /* font-family: "RoslindaleText"; */
   text-align: center;
 }
@@ -45,6 +45,11 @@
   /* font-size: 8.4vw; */
   font-weight: 400;
   padding-bottom: 300px;
+  position: relative;
+}
+.section_1 .txt_wrap .main_title .title.title_second{
+  position: relative;
+  z-index: -1;
 }
 .section_1 .txt_wrap p {
   font-size: 28px;
@@ -54,7 +59,6 @@
 
 .section_1 .clock {
   width: 220px;
-  height: 80px;
   position: absolute;
   top: 0;
   left: 0;
@@ -91,12 +95,9 @@
   height: 100%;
   /* height: calc(100vh + 860px); */
   margin: 0 auto;
-  /* position: absolute; */
-  /* top: -90vh; */
-  /* background: #000000; */
   -webkit-mask-image: linear-gradient(to bottom, black 100%, transparent 100%);
-  mask-image: linear-gradient(to bottom,  transparent 100%, transparent 100%);
-  z-index: 1;
+  mask-image: linear-gradient(to bottom,  black 100%, transparent 100%);
+  /* z-index: 1; */
   position: relative;
 }
 
