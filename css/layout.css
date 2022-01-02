@@ -59,6 +59,7 @@ body::-webkit-scrollbar {
 /* header */
 
 header{
+  display: none;
   min-width: 1920px;
   width: 100%;
   height: 100px;
