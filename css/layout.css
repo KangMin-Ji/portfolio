@@ -22,7 +22,9 @@
   font-weight: normal;
   font-style: normal;
 }
-
+html{
+  overflow-x: hidden;
+}
 body{
   /* min-width: 1600px; */
   /* min-width: 1920px; */
