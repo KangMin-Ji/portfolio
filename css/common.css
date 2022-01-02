@@ -1,8 +1,28 @@
-.card_wrap{
+:root {
+  --font_p: 26px;
+  --font_card_span: 30px;
+  --font_card_title: 200px;
+  --font_button: 16px;
+  --font_p_large: 30px;
+}
+
+.section_1 .txt_wrap p,
+.section_2 p {
+  width: 100%;
+  font-size: var(--font_p);
+  text-align: center;
+  padding: 30px;
+  line-height: 2;
+  word-break:keep-all;
+  word-wrap: break-word;
+}
+
+.card_wrap {
   position: absolute;
   transform-style: preserve-3d;
 }
-.card_wrap .card_front{
+
+.card_wrap .card_front {
   width: 100%;
   height: 100%;
   background: url(../image/card_front02.jpg) no-repeat;
@@ -12,10 +32,11 @@
   position: absolute;
   top: 0;
   left: 0;
-  border-radius: 16px;
+  border-radius: 4%;
   /* border: 1px solid #e6e6e6; */
 }
-.card_wrap .card_back{
+
+.card_wrap .card_back {
   width: 100%;
   height: 100%;
   background: url(../image/card_back01.png) no-repeat;
@@ -24,7 +45,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  border-radius: 16px;
+  border-radius: 4%;
   /* border: 1px solid #e6e6e6; */
   backface-visibility: hidden;
 }
@@ -35,55 +56,73 @@
   text-align: center;
   /* z-index: 1; */
 }
-.renewal_area .inner{
+
+.renewal_area .inner {
   width: 1200px;
   margin: 0 auto;
   /* padding: 300px 100px 100px 100px; */
   padding: 300px 0 100px 0;
 }
 
-.renewal_area .inner .title_wrap{
+.renewal_area .inner .title_wrap {
   position: relative;
 }
 
-.renewal_area .img_wrap .card_wrap{
+.renewal_area .img_wrap .card_wrap {
   width: 200px;
   padding-bottom: 320px;
 }
-.renewal_area .img_wrap .card_wrap.card_wrap01{
-  transform:rotateX(-30deg) rotateY(180deg) rotate(30deg);
-  left: 10px;
+
+.renewal_area .img_wrap .card_wrap.card_wrap01 {
+  transform: rotateX(-30deg) rotateY(180deg) rotate(30deg);
+  /* left: 10px; */
+  left: 0.1%;
 }
-.renewal_area .img_wrap .card_wrap.card_wrap02{
+
+.renewal_area .img_wrap .card_wrap.card_wrap02 {
   transform: rotateX(-36deg) rotateY(182deg) rotate(-45deg);
-  top: 50px;
-  right: 150px;
+  /* top: 50px; */
+  /* right: 150px; */
+  top: 6.25%;
+  right: 12.5%;
 }
-.renewal_area .img_wrap .card_wrap.card_wrap03{
+
+.renewal_area .img_wrap .card_wrap.card_wrap03 {
   transform: rotateX(-20deg) rotateY(40deg) rotate(45deg);
-  top: 450px;
-  left: 50px;
+  /* top: 450px; */
+  /* left: 50px; */
+  top: 56.25%;
+  left: 4.16%;
 }
-.renewal_area .img_wrap .card_wrap.card_wrap04{
+
+.renewal_area .img_wrap .card_wrap.card_wrap04 {
   transform: rotateX(-20deg) rotateY(200deg) rotate(30deg);
-  top: 450px;
-  left: 550px;
+  /* top: 450px; */
+  /* left: 550px; */
+  top: 56.25%;
+  left: 45.83%;
 }
-.renewal_area .img_wrap .card_wrap.card_wrap05{  
-  transform: rotateX(-20deg)  rotateY(20deg) rotate(30deg);
-  top: 400px;
+
+.renewal_area .img_wrap .card_wrap.card_wrap05 {
+  transform: rotateX(-20deg) rotateY(20deg) rotate(30deg);
+  /* top: 400px; */
+  /* right: 0; */
+  top: 50%;
   right: 0;
 }
-.renewal_area .img_wrap{
+
+.renewal_area .img_wrap {
   width: 100%;
   height: 800px;
   position: relative;
   transform: scale(0.98);
-  transition: 0.3s; 
+  transition: 0.3s;
 }
-.renewal_area .inner .title_wrap:hover .img_wrap{
+
+.renewal_area .inner .title_wrap:hover .img_wrap {
   transform: scale(1);
 }
+
 .renewal_area .homeP_title {
   width: 100%;
   position: absolute;
@@ -91,47 +130,195 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.renewal_area .homeP_title span{
-  font-size: 30px;
+
+.renewal_area .homeP_title span {
+  font-size: var(--font_card_span);
 }
-.renewal_area .homeP_title h2{
+
+.renewal_area .homeP_title h2 {
   font-size: 140px;
   padding-top: 50px;
   line-height: 150px;
   /* font-size: 7.3vw; */
 }
-.renewal_area .homeP_title .button{
+
+.renewal_area .homeP_title .button {
   display: inline-block;
   vertical-align: top;
   width: 250px;
   height: 80px;
-  background: rgba(0,0,0,0.8);
+  background: rgba(0, 0, 0, 0.8);
   color: #fff;
   border-radius: 60px;
   line-height: 80px;
   margin-top: 50px;
-  font-size: 16px;
+  font-size: var(--font_button);
   transition: 0.3s;
   text-align: center;
 }
-.renewal_area .homeP_title .button:hover{
-  background: rgba(0,0,0,1);
+
+.renewal_area .homeP_title .button:hover {
+  background: rgba(0, 0, 0, 1);
 }
-.renewal_area .content_area{
+
+.renewal_area .content_area {
   text-align: center;
   padding-top: 100px;
 }
 
-.renewal_area .content_area .content_txt p{
+.renewal_area .content_area .content_txt p {
   padding-bottom: 34px;
-  font-size: 24px;
+  font-size: var(--font_p);
+  line-height: 1.4;
+  /* font-size: 24px; */
   font-family: 'MaruBuri-Regular';
   position: relative;
+  word-break:keep-all;
+  word-wrap: break-word;
 }
-.renewal_area .content_area .content_txt p.large{
-  font-size: 30px;
+
+.renewal_area .content_area .content_txt p.large {
+  font-size: var(--font_p_large);
   padding-bottom: 40px;
 }
-.renewal_area .content_area .content_txt p span{
+
+.renewal_area .content_area .content_txt p span {
   border-bottom: 1px solid #000;
+}
+
+@media screen and (max-width: 1300px) {
+  :root {
+    --font_p: 24px;
+    --font_card_span: 24px;
+    --font_card_title: 150px;
+    --font_button: 16px;
+  }
+  .renewal_area .inner{
+    width: 950px;
+  }
+  .renewal_area .homeP_title h2 {
+    font-size: 110px;
+    line-height: 120px;
+  }
+  .renewal_area .img_wrap {
+    height: 633px;
+    /* 1.5 */
+  }
+  
+.renewal_area .img_wrap .card_wrap {
+  /* width: 200px; */
+  width: 158.33px;
+  /* 0.166 */
+  /* padding-bottom: 320px; */
+  padding-bottom: 253.32px;
+  /* 1.6 */
+}
+}
+@media screen and (max-width: 1050px) {
+  :root {
+    --font_p: 20px;
+    --font_card_span: 20px;
+    --font_card_title: 100px;
+    --font_button: 16px;
+  }
+  .renewal_area .inner{
+    width: 700px;
+  }
+  .renewal_area .homeP_title h2 {
+    font-size: 82px;
+    line-height: 90px;
+    padding-top: 20px;
+  }
+  .renewal_area .homeP_title .button{
+    width: 200px;
+    height: 60px;
+    line-height: 65px;
+    border-radius: 40px;
+    margin-top: 30px;
+  }
+  .renewal_area .img_wrap {
+    height: 466.66px;
+  }
+  
+.renewal_area .img_wrap .card_wrap {
+  /* width: 200px; */
+  /* width: 158.33px; */
+  width: 116.2px;
+  /* 0.166 */
+  /* padding-bottom: 320px; */
+  /* padding-bottom: 253.32px; */
+  padding-bottom: 185.92px;
+  /* 1.6 */
+}
+}
+@media screen and (max-width: 800px) {
+  :root {
+    --font_p: 20px;
+    --font_card_span: 18px;
+    --font_card_title: 70px;
+    --font_button: 14px;
+  }
+  .renewal_area .inner{
+    width: 450px;
+  }
+  .renewal_area .homeP_title h2 {
+    font-size: 52px;
+    line-height: 62px;
+  }
+  .renewal_area .homeP_title .button {
+    width: 150px;
+    height: 50px;
+    line-height: 55px;
+    font-size: 12px;
+    margin-top: 20px;
+    /* border-radius: 20px; */
+  }
+  .renewal_area .img_wrap {
+    height: 300px;
+  }
+  
+.renewal_area .img_wrap .card_wrap {
+  /* width: 200px; */
+  /* width: 158.33px; */
+  /* width: 116.2px; */
+  width: 74.7px;
+  /* 0.166 */
+  /* padding-bottom: 320px; */
+  /* padding-bottom: 253.32px; */
+  /* padding-bottom: 185.92px; */
+  padding-bottom: 119.52px;
+  /* 1.6 */
+}
+}
+@media screen and (max-width: 500px) {
+  :root {
+    --font_p: 16px;
+    --font_card_span: 16px;
+    --font_card_title: 40px;
+  }
+  .renewal_area .inner{
+    width: 200px;
+  }
+  .renewal_area .homeP_title h2 {
+    font-size: 24px;
+    line-height: 34px;
+  }
+  .renewal_area .img_wrap {
+    height: 200px;
+  }
+  
+.renewal_area .img_wrap .card_wrap {
+  /* width: 200px; */
+  /* width: 158.33px; */
+  /* width: 116.2px; */
+  /* width: 74.7px; */
+  width: 33.2px;
+  /* 0.166 */
+  /* padding-bottom: 320px; */
+  /* padding-bottom: 253.32px; */
+  /* padding-bottom: 185.92px; */
+  /* padding-bottom: 119.52px; */
+  padding-bottom: 53.12px;
+  /* 1.6 */
+}
 }
