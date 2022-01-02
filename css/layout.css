@@ -27,6 +27,7 @@ body{
   /* min-width: 1600px; */
   /* min-width: 1920px; */
   font-family: 'RoslindaleText', 'MaruBuri-Regular';
+  overflow-x: hidden;
 }
 body::-webkit-scrollbar {
   display: none; 
