@@ -111,7 +111,7 @@ $(function () {
       scrub: 1,
       start: "50% 50%",
       end: "+=3000",
-      anticipatePin:1,
+      anticipatePin: 1,
     }
   })
   .to(".card_area", {
