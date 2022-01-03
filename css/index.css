@@ -75,7 +75,7 @@
   width: 100%;
   position: absolute;
   /* bottom: 0; */
-  bottom: -30px;
+  bottom: -20px;
   z-index: -1;
   /* bottom: -50vh; */
 }
@@ -408,6 +408,9 @@ left: 67.5%;
     .section_1 .hole {
       width: 200px;
       height: calc(100vh + 570px);
+    }
+    .section_1 .hole02{
+      bottom: -15px;
     }
     .section_2{
       padding-top: 200px;
