@@ -58,10 +58,11 @@
 }
 
 .renewal_area .inner {
-  width: 1200px;
-  margin: 0 auto;
+  width: 100%;
+  /* width: 1200px; */
+  /* margin: 0 auto; */
   /* padding: 300px 100px 100px 100px; */
-  padding: 300px 0 100px 0;
+  padding: 200px 0 100px 0;
 }
 
 .renewal_area .inner .title_wrap {
@@ -112,15 +113,17 @@
 }
 
 .renewal_area .img_wrap {
-  width: 100%;
+  /* width: 100%; */
+  width: 1200px;
   height: 800px;
   position: relative;
-  transform: scale(0.98);
+  left: 50%;
+  transform: scale(0.98) translateX(-50%);
   transition: 0.3s;
 }
 
 .renewal_area .inner .title_wrap:hover .img_wrap {
-  transform: scale(1);
+  transform: scale(1) translateX(-50%);
 }
 
 .renewal_area .homeP_title {
@@ -162,8 +165,10 @@
 }
 
 .renewal_area .content_area {
+  width: 80%;
   text-align: center;
   padding-top: 100px;
+  margin: 0 auto;
 }
 
 .renewal_area .content_area .content_txt p {
@@ -194,13 +199,14 @@
     --font_button: 16px;
   }
   .renewal_area .inner{
-    width: 950px;
+    padding: 100px 0;
   }
   .renewal_area .homeP_title h2 {
     font-size: 110px;
     line-height: 120px;
   }
   .renewal_area .img_wrap {
+    width: 950px;
     height: 633px;
     /* 1.5 */
   }
@@ -222,7 +228,6 @@
     --font_button: 16px;
   }
   .renewal_area .inner{
-    width: 700px;
   }
   .renewal_area .homeP_title h2 {
     font-size: 82px;
@@ -237,6 +242,7 @@
     margin-top: 30px;
   }
   .renewal_area .img_wrap {
+    width: 700px;
     height: 466.66px;
   }
   
@@ -259,7 +265,8 @@
     --font_button: 14px;
   }
   .renewal_area .inner{
-    width: 450px;
+    /* width: 450px; */
+    width: 100%;
   }
   .renewal_area .homeP_title h2 {
     font-size: 52px;
@@ -273,20 +280,23 @@
     margin-top: 20px;
     /* border-radius: 20px; */
   }
-  .renewal_area .img_wrap {
+  /* .renewal_area .img_wrap {
+    width: 450px;
     height: 300px;
-  }
+    left: 50%;
+    transform: translateX(-50%);
+  } */
   
 .renewal_area .img_wrap .card_wrap {
   /* width: 200px; */
   /* width: 158.33px; */
   /* width: 116.2px; */
-  width: 74.7px;
+  /* width: 74.7px; */
   /* 0.166 */
   /* padding-bottom: 320px; */
   /* padding-bottom: 253.32px; */
   /* padding-bottom: 185.92px; */
-  padding-bottom: 119.52px;
+  /* padding-bottom: 119.52px; */
   /* 1.6 */
 }
 }
@@ -297,28 +307,22 @@
     --font_card_title: 40px;
   }
   .renewal_area .inner{
-    width: 300px;
+    /* width: 320px; */
+    /* width: 100%; */
   }
   .renewal_area .homeP_title h2 {
-    font-size: 24px;
-    line-height: 34px;
+    font-size: 40px;
+    line-height: 45px;
   }
   .renewal_area .img_wrap {
-    height: 200px;
+    width: 450px;   
+    height: 300px;
   }
   
 .renewal_area .img_wrap .card_wrap {
-  /* width: 200px; */
-  /* width: 158.33px; */
-  /* width: 116.2px; */
-  /* width: 74.7px; */
-  width: 33.2px;
-  /* 0.166 */
-  /* padding-bottom: 320px; */
-  /* padding-bottom: 253.32px; */
-  /* padding-bottom: 185.92px; */
-  /* padding-bottom: 119.52px; */
-  padding-bottom: 53.12px;
-  /* 1.6 */
+  width: 74.7px;
+  padding-bottom: 119.52px;
+  /* width: 33.2px;
+  padding-bottom: 53.12px; */
 }
 }
