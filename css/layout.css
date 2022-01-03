@@ -136,3 +136,10 @@ footer {
   height: 100px;
   background: #000;
 }
+footer p {
+  text-align: center;
+  color: rgba(255,255,255,0.8);
+  line-height: 1.5;
+  font-size: var(--font_footer);
+  transform: translateY(50%);
+}
