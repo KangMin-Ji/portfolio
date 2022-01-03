@@ -169,7 +169,7 @@
 }
 
 .renewal_area .content_area {
-  width: 80%;
+  width: 85%;
   text-align: center;
   padding-top: 100px;
   margin: 0 auto;
@@ -194,7 +194,8 @@
 }
 .renewal_area .content_area .content_txt p.explanation{
   line-height: 2;
-  padding: 40px 0 50px;
+  /* padding: 40px 0 50px; */
+  padding: 3% 0 4%;
 }
 .renewal_area .content_area .content_txt p span.underline {
   border-bottom: 1px solid #000;
@@ -296,6 +297,9 @@
   .renewal_area .homeP_title h2 {
     padding-top: 20px;
   }
+  .renewal_area .content_area .content_txt p.explanation{
+    padding: 5% 0 7%;
+  }
 }
 @media screen and (max-width: 500px) {
   :root {
@@ -303,7 +307,7 @@
     --font_card_span: 16px;
     --font_card_title: 40px;
     --font_button: 14px;
-    --font_p_large: 28px;
+    --font_p_large: 26px;
     --font_date: 14px;
   }
   .renewal_area .img_wrap {
