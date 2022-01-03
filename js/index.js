@@ -105,62 +105,62 @@ $(function () {
   });
 
 
-  // cardFunc = gsap.timeline({
-  //   scrollTrigger: {
-  //     trigger: '.section_3',
-  //     scrub: 1,
-  //     start: "50% 50%",
-  //     end: "+=3000",
-  //     anticipatePin: 1,
-  //   }
-  // })
-  // .to(".card_area", {
-  //   scrollTrigger: {
-  //     trigger: ".card_area",
-  //     pin: ".section_3",
-  //     start: "top 50%",
-  //     end: "30% 10%",
-  //     scrub: true,
-  //   },
-  //   yPercent: -20,
-  // }, "label-=1")
-  // .to(".section_3 .txt_wrap .title, .section_3 .txt_wrap>span", {
-  //   opacity: 0,
-  //   yPercent: -10,
-  // }, "label")
+  cardFunc = gsap.timeline({
+    scrollTrigger: {
+      trigger: '.section_3',
+      scrub: 1,
+      start: "50% 50%",
+      end: "+=3000",
+      anticipatePin: 1,
+    }
+  })
+  .to(".card_area", {
+    scrollTrigger: {
+      trigger: ".card_area",
+      pin: ".section_3",
+      start: "top 50%",
+      end: "30% 10%",
+      scrub: true,
+    },
+    yPercent: -20,
+  }, "label-=1")
+  .to(".section_3 .txt_wrap .title, .section_3 .txt_wrap>span", {
+    opacity: 0,
+    yPercent: -10,
+  }, "label")
   
 
 
-  // $('.section_3 .card_wrap').each(function (index, item) {
-  //   let rotY = $(this).data('roty') ? $(this).data('roty') : 0;
-  //   let rotX = $(this).data('rotx') ? $(this).data('rotx') : 0;
-  //   let yPer = $(this).data('yper') ? $(this).data('yper') : 0;
-  //   let xPer = $(this).data('xper') ? $(this).data('xper') : 0;
-  //   let r = $(this).data('r') ? $(this).data('r') : 0;
+  $('.section_3 .card_wrap').each(function (index, item) {
+    let rotY = $(this).data('roty') ? $(this).data('roty') : 0;
+    let rotX = $(this).data('rotx') ? $(this).data('rotx') : 0;
+    let yPer = $(this).data('yper') ? $(this).data('yper') : 0;
+    let xPer = $(this).data('xper') ? $(this).data('xper') : 0;
+    let r = $(this).data('r') ? $(this).data('r') : 0;
 
-  //   let rotY02 = $(this).data('roty02') ? $(this).data('roty02') : 0;
-  //   let rotX02 = $(this).data('rotx02') ? $(this).data('rotx02') : 0;
-  //   let yPer02 = $(this).data('yper02') ? $(this).data('yper02') : 0;
-  //   let xPer02 = $(this).data('xper02') ? $(this).data('xper02') : 0;
-  //   let r02 = $(this).data('r02') ? $(this).data('r02') : 0;
-  //   let dur = $(this).data('dur') ? $(this).data('dur') : 0;
+    let rotY02 = $(this).data('roty02') ? $(this).data('roty02') : 0;
+    let rotX02 = $(this).data('rotx02') ? $(this).data('rotx02') : 0;
+    let yPer02 = $(this).data('yper02') ? $(this).data('yper02') : 0;
+    let xPer02 = $(this).data('xper02') ? $(this).data('xper02') : 0;
+    let r02 = $(this).data('r02') ? $(this).data('r02') : 0;
+    let dur = $(this).data('dur') ? $(this).data('dur') : 0;
 
-  //   cardFunc.to(item, {
-  //       rotateY: rotY,
-  //       rotateX: rotX,
-  //       yPercent: yPer,
-  //       xPercent: xPer,
-  //       rotate: r,
-  //     }, "label")
-  //     .to(item, {
-  //       rotateY: rotY02,
-  //       rotateX: rotX02,
-  //       yPercent: yPer02,
-  //       xPercent: xPer02,
-  //       rotate: r02,
-  //       duration: dur,
-  //     }, "label02")
-  // });
+    cardFunc.to(item, {
+        rotateY: rotY,
+        rotateX: rotX,
+        yPercent: yPer,
+        xPercent: xPer,
+        rotate: r,
+      }, "label")
+      .to(item, {
+        rotateY: rotY02,
+        rotateX: rotX02,
+        yPercent: yPer02,
+        xPercent: xPer02,
+        rotate: r02,
+        duration: dur,
+      }, "label02")
+  });
 
 
 }); //end
