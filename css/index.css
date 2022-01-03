@@ -76,6 +76,7 @@
   position: absolute;
   /* bottom: 0; */
   bottom: -30px;
+  z-index: -1;
   /* bottom: -50vh; */
 }
 .section_1 .mask_img{
@@ -183,8 +184,8 @@
   /* background: #ccc; */
   position: absolute;
   top: 300px;
-  left: 50%;
-  transform: translateX(-53.5%);
+  left: 44%;
+  transform: translateX(-50%);
   z-index: 3;
 }
 
@@ -450,7 +451,7 @@ left: 67.5%;
     /* 0.83 */
     height: 456.5px;
     /* height: 373.5px; */
-    top: 100px;
+    top: 110px;
   }
     
   .section_3 .card_area .card_wrap{
