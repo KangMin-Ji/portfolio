@@ -93,16 +93,16 @@ $(function () {
     yPercent: -50,
   });
 
-  gsap.to(".section_1 .txt_wrap p.effect", {
-    scrollTrigger: {
-      trigger: ".section_1 .txt_wrap p.effect",
-      start: "bottom 20%",
-      end: "bottom top",
-      scrub: true,
-      pinSpacing: false,
-    },
-    yPercent: -250
-  });
+  // gsap.to(".section_1 .txt_wrap p.effect", {
+  //   scrollTrigger: {
+  //     trigger: ".section_1 .txt_wrap p.effect",
+  //     start: "bottom 20%",
+  //     end: "bottom top",
+  //     scrub: true,
+  //     pinSpacing: false,
+  //   },
+  //   yPercent: -250
+  // });
 
 
   cardFunc = gsap.timeline({

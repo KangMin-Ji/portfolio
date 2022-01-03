@@ -3,7 +3,8 @@
   --font_card_span: 30px;
   --font_card_title: 200px;
   --font_button: 16px;
-  --font_p_large: 30px;
+  --font_p_large: 38px;
+  --font_date: 20px;
 }
 
 .section_1 .txt_wrap p,
@@ -62,7 +63,8 @@
   /* width: 1200px; */
   /* margin: 0 auto; */
   /* padding: 300px 100px 100px 100px; */
-  padding: 200px 0 100px 0;
+  /* padding: 200px 0 100px 0; */
+  padding: 20% 0 10%;
 }
 
 .renewal_area .inner .title_wrap {
@@ -139,9 +141,11 @@
 }
 
 .renewal_area .homeP_title h2 {
-  font-size: 140px;
+  font-size: var(--font_card_title);
+  /* font-size: 140px; */
   padding-top: 50px;
-  line-height: 150px;
+  line-height: 1;
+  /* line-height: 150px; */
   /* font-size: 7.3vw; */
 }
 
@@ -153,7 +157,7 @@
   background: rgba(0, 0, 0, 0.8);
   color: #fff;
   border-radius: 60px;
-  line-height: 80px;
+  line-height: 85px;
   margin-top: 50px;
   font-size: var(--font_button);
   transition: 0.3s;
@@ -182,42 +186,57 @@
   word-wrap: break-word;
 }
 
-.renewal_area .content_area .content_txt p.large {
+.renewal_area .content_area .content_txt h3 {
   font-size: var(--font_p_large);
-  padding-bottom: 40px;
 }
-
-.renewal_area .content_area .content_txt p span {
+.renewal_area .content_area .content_txt h3 .date{
+  font-size: var(--font_date);
+}
+.renewal_area .content_area .content_txt p.explanation{
+  line-height: 2;
+  padding: 40px 0 50px;
+}
+.renewal_area .content_area .content_txt p span.underline {
   border-bottom: 1px solid #000;
 }
-
+.renewal_area .content_area .tools_wrap {
+  padding-bottom: 20px;
+}
+.renewal_area .content_area .tools_wrap span{
+  display: inline-block;
+  vertical-align: top;
+  font-size: var(--font_p);
+}
+.renewal_area .content_area .tools_wrap .tool{
+  height: 50px;
+  margin-left: 20px;
+  vertical-align: top;
+  margin-top: -15px;
+  display: inline-block;
+}
+.renewal_area .content_area .tools_wrap .tool img{
+  height: 100%;
+}
 @media screen and (max-width: 1300px) {
   :root {
     --font_p: 24px;
     --font_card_span: 24px;
     --font_card_title: 150px;
     --font_button: 16px;
+    --font_p_large: 34px;
+    --font_date: 18px;
   }
-  .renewal_area .inner{
+  /* .renewal_area .inner{
     padding: 100px 0;
-  }
-  .renewal_area .homeP_title h2 {
-    font-size: 110px;
-    line-height: 120px;
-  }
+  } */
   .renewal_area .img_wrap {
     width: 950px;
     height: 633px;
-    /* 1.5 */
   }
   
 .renewal_area .img_wrap .card_wrap {
-  /* width: 200px; */
   width: 158.33px;
-  /* 0.166 */
-  /* padding-bottom: 320px; */
   padding-bottom: 253.32px;
-  /* 1.6 */
 }
 }
 @media screen and (max-width: 1050px) {
@@ -225,14 +244,9 @@
     --font_p: 20px;
     --font_card_span: 20px;
     --font_card_title: 100px;
-    --font_button: 16px;
-  }
-  .renewal_area .inner{
-  }
-  .renewal_area .homeP_title h2 {
-    font-size: 82px;
-    line-height: 90px;
-    padding-top: 20px;
+    --font_button: 14px;
+    --font_p_large: 32px;
+    --font_date: 16px;
   }
   .renewal_area .homeP_title .button{
     width: 200px;
@@ -241,36 +255,36 @@
     border-radius: 40px;
     margin-top: 30px;
   }
+  .renewal_area .homeP_title h2 {
+    padding-top: 30px;
+  }
   .renewal_area .img_wrap {
     width: 700px;
     height: 466.66px;
   }
   
 .renewal_area .img_wrap .card_wrap {
-  /* width: 200px; */
-  /* width: 158.33px; */
   width: 116.2px;
-  /* 0.166 */
-  /* padding-bottom: 320px; */
-  /* padding-bottom: 253.32px; */
   padding-bottom: 185.92px;
-  /* 1.6 */
+}
+.renewal_area .content_area .tools_wrap .tool{
+  height: 30px;
+  margin-left: 10px;
+  margin-top: -5px;
 }
 }
+
 @media screen and (max-width: 800px) {
   :root {
     --font_p: 20px;
     --font_card_span: 18px;
     --font_card_title: 70px;
     --font_button: 14px;
+    --font_p_large: 30px;
+    --font_date: 16px;
   }
   .renewal_area .inner{
-    /* width: 450px; */
     width: 100%;
-  }
-  .renewal_area .homeP_title h2 {
-    font-size: 52px;
-    line-height: 62px;
   }
   .renewal_area .homeP_title .button {
     width: 150px;
@@ -278,41 +292,19 @@
     line-height: 55px;
     font-size: 12px;
     margin-top: 20px;
-    /* border-radius: 20px; */
   }
-  /* .renewal_area .img_wrap {
-    width: 450px;
-    height: 300px;
-    left: 50%;
-    transform: translateX(-50%);
-  } */
-  
-.renewal_area .img_wrap .card_wrap {
-  /* width: 200px; */
-  /* width: 158.33px; */
-  /* width: 116.2px; */
-  /* width: 74.7px; */
-  /* 0.166 */
-  /* padding-bottom: 320px; */
-  /* padding-bottom: 253.32px; */
-  /* padding-bottom: 185.92px; */
-  /* padding-bottom: 119.52px; */
-  /* 1.6 */
-}
+  .renewal_area .homeP_title h2 {
+    padding-top: 20px;
+  }
 }
 @media screen and (max-width: 500px) {
   :root {
     --font_p: 16px;
     --font_card_span: 16px;
     --font_card_title: 40px;
-  }
-  .renewal_area .inner{
-    /* width: 320px; */
-    /* width: 100%; */
-  }
-  .renewal_area .homeP_title h2 {
-    font-size: 40px;
-    line-height: 45px;
+    --font_button: 14px;
+    --font_p_large: 28px;
+    --font_date: 14px;
   }
   .renewal_area .img_wrap {
     width: 450px;   
@@ -322,7 +314,13 @@
 .renewal_area .img_wrap .card_wrap {
   width: 74.7px;
   padding-bottom: 119.52px;
-  /* width: 33.2px;
-  padding-bottom: 53.12px; */
+}
+.renewal_area .homeP_title h2 {
+  padding-top: 10px;
+}
+.renewal_area .content_area .tools_wrap .tool{
+  height: 20px;
+  margin-left: 5px;
+  margin-top: -3px;
 }
 }
