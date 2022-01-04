@@ -36,7 +36,7 @@ $(function () {
       start: "top top",
       end: "bottom bottom",
       onUpdate: (self) => {
-        self.direction === -1 ? showAnim.play() : showAnim.reverse()
+        showAnim.play()
       },
     });
     click = true;
@@ -50,7 +50,7 @@ $(function () {
       start: "top top",
       end: "bottom bottom",
       onUpdate: (self) => {
-        showAnim.play()
+        self.direction === -1 ? showAnim.play() : showAnim.reverse()
       },
     });
     $(window).scroll(function() {
