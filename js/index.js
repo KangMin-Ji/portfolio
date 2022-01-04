@@ -32,6 +32,7 @@ $(function () {
     });
     $('html').addClass('on');
     $('header .inner').addClass('on');
+    showAnim.pause();
     click = true;
   }
   else {
