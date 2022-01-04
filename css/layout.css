@@ -65,7 +65,7 @@ body::-webkit-scrollbar {
 header{
   /* min-width: 1920px; */
   width: 100%;
-  height: 100px;
+  height: 80px;
   position: fixed;
   top: 0;
   left: 0;
@@ -75,10 +75,10 @@ header{
   color: #fff;
 }
 header .inner{
-  padding: 30px;
+  padding: 0 30px;
   height: 100%;
-  /* display: flex; */
-  /* justify-content: space-between; */
+  display: flex;
+  justify-content: space-between;
   align-items: center;
 
 }
@@ -89,9 +89,20 @@ header .header_left{
   align-items: center;
 }
 header .logo{
-  width: 100px;
-  height: 50px;
-  background: #000;
+  width: 120px;
+  /* height: 50px; */
+  /* background: #000; */
+}
+header .logo a{
+  display: block;
+  height: 100%;
+}
+header .logo a svg{
+  width: 100%;
+}
+header .logo a svg g{
+  fill: #fff;
+  stroke: #fff;
 }
 header .header_left .txt_wrap {
   display: flex;
@@ -100,11 +111,13 @@ header .header_left .txt_wrap {
 header .header_left .txt_wrap p{
   padding-left: 20px;
   font-size: 14px;
-  font-family: 'Didact Gothic', sans-serif;
+  font-family: 'Saira', sans-serif;
+  line-height: 1.2;
+  /* font-family: 'Didact Gothic', sans-serif; */
 }
 header .ham_btn{
   display: block;
-  height: 100%;
+  /* height: 100%; */
   float: right;
   /* background: #000; */
 }
@@ -125,21 +138,38 @@ header .btn_wrap .line.line_bottom{
 header.on{
   background: #e5e7eb;
   color: #000;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid rgba(0,0,0,0.5);
 }
 header.on .line{
   background: #000;
 }
-
+header.on .logo a svg g{
+  fill: #231815;
+  stroke: #231815;
+}
 
 footer {
   height: 100px;
   background: #000;
+  position: relative;
 }
 footer p {
+  width: 90%;
   text-align: center;
+  line-height: 1.4;
   color: rgba(255,255,255,0.8);
-  line-height: 1.5;
+  line-height: 2;
   font-size: var(--font_footer);
-  transform: translateY(50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+@media screen and (max-width: 500px) {
+  header .inner{
+    padding: 0 10px;
+  }
+  header .header_title {
+    display: none;
+  }
 }

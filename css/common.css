@@ -5,7 +5,7 @@
   --font_button: 16px;
   --font_p_large: 38px;
   --font_date: 20px;
-  --font_footer: 16x;
+  --font_footer: 14px;
 }
 
 .section_1 .txt_wrap p,
@@ -170,7 +170,7 @@
 }
 
 .renewal_area .content_area {
-  width: 85%;
+  width: 82%;
   text-align: center;
   padding-top: 6%;
   /* padding-top: 100px; */
@@ -230,6 +230,7 @@
     --font_button: 16px;
     --font_p_large: 32px;
     --font_date: 18px;
+    --font_footer: 14px;
   }
   /* .renewal_area .inner{
     padding: 100px 0;
@@ -252,6 +253,7 @@
     --font_button: 14px;
     --font_p_large: 30px;
     --font_date: 16px;
+    --font_footer: 12px;
   }
   .renewal_area .homeP_title .button{
     width: 200px;
@@ -281,12 +283,13 @@
 
 @media screen and (max-width: 800px) {
   :root {
-    --font_p: 20px;
+    --font_p: 18px;
     --font_card_span: 18px;
     --font_card_title: 70px;
     --font_button: 14px;
     --font_p_large: 26px;
     --font_date: 16px;
+    --font_footer: 12px;
   }
   .renewal_area .inner{
     width: 100%;
@@ -307,12 +310,13 @@
 }
 @media screen and (max-width: 500px) {
   :root {
-    --font_p: 16px;
-    --font_card_span: 16px;
+    --font_p: 17px;
+    --font_card_span: 15px;
     --font_card_title: 40px;
     --font_button: 14px;
     --font_p_large: 24px;
     --font_date: 14px;
+    --font_footer: 12px;
   }
   .renewal_area .img_wrap {
     width: 450px;   

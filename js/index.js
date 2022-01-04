@@ -2,8 +2,8 @@ $(function () {
   const showAnim = gsap.from('header', {
     yPercent: -200,
     paused: true,
-    duration: 0.5
-  }).progress(1);
+    duration: 0.5,
+  });
 
   ScrollTrigger.create({
     start: "top top",
