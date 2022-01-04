@@ -75,7 +75,7 @@ $(function () {
       start: "bottom 50%",
       end: "bottom 40%",
       scrub: true,
-      pinSpacing: false,
+      // pinSpacing: false,
     },
     scale: 0,
   })
@@ -87,10 +87,10 @@ $(function () {
       start: "100% 50%",
       end: "bottom 20%",
       scrub: true,
-      pinSpacing: false,
+      // pinSpacing: false,
     },
     scale: 0,
-    // yPercent: -50,
+   // yPercent: -50,
   });
 
   // gsap.to(".section_1 .txt_wrap p.effect", {
