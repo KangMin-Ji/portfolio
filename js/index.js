@@ -32,7 +32,7 @@ $(function () {
     });
     $('html').addClass('on');
     $('header .inner').addClass('on');
-    showAnim.pause();
+    showAnim.play();
     click = true;
   }
   else {
