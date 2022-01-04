@@ -36,7 +36,7 @@ $(function () {
       start: "top top",
       end: "bottom bottom",
       onUpdate: (self) => {
-        showAnim.play()
+        self.direction === -1 ? showAnim.play() : showAnim.reverse()
       },
     });
     click = true;
@@ -46,6 +46,13 @@ $(function () {
       right: '-100%',
     });
     $('html').removeClass('on');
+    ScrollTrigger.create({
+      start: "top top",
+      end: "bottom bottom",
+      onUpdate: (self) => {
+        showAnim.play()
+      },
+    });
     $(window).scroll(function() {
     sct = $(this).scrollTop();
     wh = $('.section_1 .txt_wrap .main_title').offset().top;
