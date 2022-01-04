@@ -1,5 +1,5 @@
 $(function () {
-  const showAnim = gsap.from('header', {
+  const showAnim = gsap.from('header .inner', {
     yPercent: -200,
     paused: true,
     duration: 0.5,
@@ -17,12 +17,38 @@ $(function () {
     sct = $(this).scrollTop();
     wh = $('.section_1 .txt_wrap .main_title').offset().top;
     if (sct > wh) {
-      $('header').addClass('on');
+      $('header .inner').addClass('on');
     } else {
-      $('header').removeClass('on');
+      $('header .inner').removeClass('on');
     }
   });
 
+  let click = false;
+  $('header .ham_btn').click(function(e) {
+    e.preventDefault();
+    if(click === false) {
+    $('header .gnb_area').animate({
+      right: 0,
+    });
+    $('html').addClass('on');
+    $('header .inner').addClass('on');
+    click = true;
+  }
+  else {
+    $('header .gnb_area').animate({
+      right: '-100%',
+    });
+    $('html').removeClass('on');
+    $(window).scroll(function() {
+    sct = $(this).scrollTop();
+    wh = $('.section_1 .txt_wrap .main_title').offset().top;
+    if(sct <= wh) {
+      $('header .inner').removeClass('on');
+    }
+    });
+    click = false;
+  }
+  });
 
 
   $('.drop').each(function (index, item) {
