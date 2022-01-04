@@ -90,7 +90,7 @@ $(function () {
       pinSpacing: false,
     },
     scale: 0,
-    yPercent: -50,
+    // yPercent: -50,
   });
 
   // gsap.to(".section_1 .txt_wrap p.effect", {
