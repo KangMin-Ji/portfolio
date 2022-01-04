@@ -28,6 +28,7 @@ html{
 }
 
 body{
+  /* max-width: 1920px; */
   /* min-width: 1600px; */
   /* min-width: 1920px; */
   font-family: 'RoslindaleText', 'MaruBuri-Regular';
@@ -48,7 +49,7 @@ body::-webkit-scrollbar {
     height: 0;
 }
 .noise_bg {
-  background: url(../image/noise.png) repeat;
+  background: url(../images/noise.png) repeat;
   width: 200vw;
   height: 200vh;
   background-size: 200px;
