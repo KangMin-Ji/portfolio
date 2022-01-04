@@ -32,7 +32,13 @@ $(function () {
     });
     $('html').addClass('on');
     $('header .inner').addClass('on');
-    showAnim.play();
+    ScrollTrigger.create({
+      start: "top top",
+      end: "bottom bottom",
+      onUpdate: (self) => {
+        showAnim.play()
+      },
+    });
     click = true;
   }
   else {
