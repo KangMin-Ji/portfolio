@@ -181,6 +181,7 @@ header .gnb_area .gnb li{
   display: flex;
   align-items: center;
   color: rgba(0,0,0,0.8);
+  transition: 0.3s;
 }
 header .gnb_area .gnb li:last-child{
   border-bottom: 0;
@@ -190,7 +191,9 @@ header .gnb_area .gnb li span{
   font-size: var(--font_menu_span);
   margin-bottom: 10px;
 }
-
+header .gnb_area .gnb li:hover {
+  color: #89b9fd;
+}
 footer {
   height: 100px;
   background: #000;
