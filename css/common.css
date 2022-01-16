@@ -64,7 +64,7 @@
 
 .renewal_area .inner {
   width: 100%;
-  padding: 20% 0 10%;
+  padding: 12% 0 10%;
 }
 
 .renewal_area .inner .title_wrap {
@@ -203,6 +203,7 @@
   padding: 3% 0 4%;
 }
 .renewal_area .content_area .content_txt p span.underline {
+  font-weight: bold;
   border-bottom: 1px solid #000;
 }
 .renewal_area .content_area .tools_wrap {
