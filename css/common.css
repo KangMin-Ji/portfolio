@@ -8,6 +8,7 @@
   --font_footer: 14px;
   --font_menu: 100px;
   --font_menu_span: 16px;
+  --font-highlight: 28px;
 }
 
 .section_1 .txt_wrap p,
@@ -271,6 +272,7 @@
     --font_p_large: 30px;
     --font_date: 18px;
     --font_footer: 14px;
+    --font-highlight: 26px;
   }
 
   .renewal_area .img_wrap {
@@ -297,6 +299,7 @@
     --font_footer: 12px;
     --font_menu: 90px;
     --font_menu_span: 16px;
+    --font-highlight: 24px;
   }
   .renewal_area .homeP_title .button{
     width: 200px;
@@ -335,6 +338,7 @@
     --font_footer: 12px;
     --font_menu: 56px;
     --font_menu_span: 14px;
+    --font-highlight: 22px;
   }
   .renewal_area .inner{
     width: 100%;
@@ -365,6 +369,7 @@
     --font_footer: 12px;
     --font_menu: 34px;
     --font_menu_span: 14px;
+    --font-highlight: 21px;
   }
   .renewal_area .img_wrap {
     width: 450px;   

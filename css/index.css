@@ -127,6 +127,11 @@
 .section_2 .bottom_txt{
   padding-top: 500px;
 }
+.section_2 .bottom_txt span.highlight{
+  font-size: var(--font-highlight);
+  /* color: rgb(189, 27, 27); */
+  font-weight: bold;
+}
 .section_3{
   padding-top: 700px;
 }
