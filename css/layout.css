@@ -9,13 +9,6 @@
   font-weight: normal;
   font-style: normal;
 }
-/* @font-face {
-  font-family: 'MaruBuri-Regular';
-  src: url('../font/MaruBuri-Regular.otf') format('ottf'),
-  url('../font/MaruBuri-Regular.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-} */
 @font-face {
   font-family: 'MaruBuri-Regular';
   src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.0/MaruBuri-Regular.woff') format('woff');
@@ -31,9 +24,6 @@ html.on{
 }
 
 body{
-  /* max-width: 1920px; */
-  /* min-width: 1600px; */
-  /* min-width: 1920px; */
   font-family: 'RoslindaleText', 'MaruBuri-Regular';
   overflow-x: hidden; 
   scrollbar-width: none; /* Firefox */
@@ -68,7 +58,6 @@ body::-webkit-scrollbar {
 /* header */
 
 header{
-  /* min-width: 1920px; */
   width: 100%;
   height: 80px;
   z-index: 2;
@@ -99,8 +88,6 @@ header .header_left{
 }
 header .logo{
   width: 120px;
-  /* height: 50px; */
-  /* background: #000; */
 }
 header .logo a{
   display: block;
@@ -122,15 +109,12 @@ header .header_left .txt_wrap p{
   font-size: 14px;
   font-family: 'Saira', sans-serif;
   line-height: 1.2;
-  /* font-family: 'Didact Gothic', sans-serif; */
 }
 header .ham_btn{
   display: block;
-  /* height: 100%; */
   float: right;
   position: relative;
   z-index: 99;
-  /* background: #000; */
 }
 header .ham_btn .btn_wrap{
   width: 28px;

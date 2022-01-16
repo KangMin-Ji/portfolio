@@ -94,18 +94,14 @@ $(function () {
     scrollTrigger: {
       trigger: ".person_con",
       start: "top 20%",
-      // end: "100% 30%",
-      // end: "50% 30%",
       end: (window.innerHeight * 20),
       scrub: true,
       pin: '.person',
-      // ease: "power1",
       pinSpacing: false,
       anticipatePin: true,
     },
     y: personDrop,
     rotate: -360,
-    // xPercent: 20,
   });
 
 
@@ -122,8 +118,6 @@ $(function () {
   gsap.to(".hole02", {
     scrollTrigger: {
       trigger: ".person_con",
-      // start: "50% 50%",
-      // end: "bottom 35%",
       start: "100% 50%",
       end: "bottom 20%",
       scrub: true,
@@ -132,18 +126,6 @@ $(function () {
     scale: 0,
    // yPercent: -50,
   });
-
-  // gsap.to(".section_1 .txt_wrap p.effect", {
-  //   scrollTrigger: {
-  //     trigger: ".section_1 .txt_wrap p.effect",
-  //     start: "bottom 20%",
-  //     end: "bottom top",
-  //     scrub: true,
-  //     pinSpacing: false,
-  //   },
-  //   yPercent: -250
-  // });
-
 
   cardFunc = gsap.timeline({
     scrollTrigger: {
