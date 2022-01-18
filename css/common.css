@@ -204,7 +204,7 @@
 }
 .renewal_area .content_area .content_txt p span.underline {
   font-weight: bold;
-  border-bottom: 1px solid #000;
+  /* border-bottom: 1px solid #000; */
 }
 .renewal_area .content_area .tools_wrap {
   padding: 15px 0;
