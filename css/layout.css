@@ -118,6 +118,7 @@ header .ham_btn{
 }
 header .ham_btn .btn_wrap{
   width: 28px;
+  overflow: hidden;
 }
 header .btn_wrap .line{
   width: 100%;
